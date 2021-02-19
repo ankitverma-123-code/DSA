@@ -17,6 +17,8 @@
 #define vi vector<int>
 #define deb(x) cout << #x << "=" << x << endl
 #define deb2(x, y) cout << #x << "=" << x << "," << #y << "=" << y << endl
+#define log(args...) 	{ string _s = #args; replace(_s.begin(), _s.end(), ',', ' '); stringstream _ss(_s); istream_iterator<string> _it(_ss); err(_it, args); }
+#define logarr(arr,a,b)	for(int z=(a);z<=(b);z++) cout<<(arr[z])<<" ";cout<<endl;
 #define setbits(x) __builtin_popcountll(x)
 #define print2d(dp,n,m) for(int i=0;i<=n;i++){for(int j=0;j<=m;j++)cout<<dp[i][j]<<" ";cout<<"\n";}
 typedef std::numeric_limits< double > dbl;
@@ -31,35 +33,10 @@ int32_t main()
     int t=1;
     cin>>t;
     while(t--){
-        int a,b;
-        cin>>a>>b;
-        string s;
-        cin>>s;
-        int l=0,r=0,u=0,d=0;
-        for(auto t:s){
-            if(t=='R') r++;
-            if(t=='U') u++;
-            if(t=='D') d++;
-            if(t=='L') l++;
-        }
-        bool f=0;
-        if(a>0 && r<a){
-           cout<<"NO"<<endl;
-           continue;
-        }
-        if(a<0 && l<abs(a)){
-          cout<<"NO"<<endl;
-          continue;
-        }
-        if(b>0 && u<b){
-           cout<<"NO"<<endl;
-          continue;
-        }
-        if(b<0 && d<abs(b)){
-           cout<<"NO"<<endl;
-          continue;
-        }
-
-            cout<<"YES"<<endl;
+       int n;
+       cin>>n;
+       int a[n];
+       for(int i=0;i<n;i++) cin>>a[i];
+    
     }
 }
