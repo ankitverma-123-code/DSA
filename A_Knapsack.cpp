@@ -34,14 +34,7 @@ int32_t main()
     IOS;
     int t=1;
     cin>>t;
-    while(t--){
-        int n;
-        cin>>n;
-       int* a=new int[n];
-       forr(i,0,n) cin>>a[i];
-        
-      
-
-       delete [] a;
+    while(t--){ 
+         
     }
 }
